@@ -1,20 +1,17 @@
 <!--
-  Sample index.html for an organization GitHub Pages site.
-  Usage:
-    1) Put this file at the root of the `ORGNAME.github.io` repository.
-    2) Replace ORG_NAME and ORG_TAGLINE below.
-    3) Commit and push. GitHub Pages will serve it at https://ORGNAME.github.io/
+  index.html for the Story-Adventurer organization GitHub Pages site.
+  Place this at the root of the Story-Adventurer.github.io repository.
 -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ORG_NAME · Open Source Projects</title>
-  <meta name="description" content="ORG_NAME builds open-source tools and research. Explore our projects, docs, and community.">
+  <title>Story-Adventurer · Open Source Projects</title>
+  <meta name="description" content="Story-Adventurer builds open-source tools for interactive storytelling. Explore our projects, docs, and community.">
   <meta name="theme-color" content="#0f172a">
-  <meta property="og:title" content="ORG_NAME · Open Source Projects">
-  <meta property="og:description" content="ORG_NAME builds open-source tools and research.">
+  <meta property="og:title" content="Story-Adventurer · Open Source Projects">
+  <meta property="og:description" content="Open-source tools for interactive storytelling.">
   <meta property="og:type" content="website">
   <style>
     :root {
@@ -48,7 +45,7 @@
       padding: 0;
       background: linear-gradient(180deg, var(--bg), #060a14 40%, var(--bg) 100%);
       color: var(--text);
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans";
       line-height: 1.55;
     }
     a { color: var(--link); text-decoration: none; }
@@ -74,9 +71,7 @@
       letter-spacing: -0.02em;
     }
     .tagline { color: var(--muted); font-size: 1.05rem; }
-    .cta {
-      display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px;
-    }
+    .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
     .btn {
       display: inline-block;
       padding: 10px 14px;
@@ -148,11 +143,7 @@
       margin-right: 6px;
       color: var(--muted);
     }
-    footer {
-      padding: 32px 0 60px;
-      color: var(--muted);
-      text-align: center;
-    }
+    footer { padding: 32px 0 60px; color: var(--muted); text-align: center; }
     .sr-only {
       position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
       overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
@@ -166,10 +157,10 @@
     <header>
       <div class="hero">
         <div>
-          <h1>ORG_NAME</h1>
-          <p class="tagline">ORG_TAGLINE. Lightweight homepage powered by GitHub Pages.</p>
+          <h1>Story-Adventurer</h1>
+          <p class="tagline">Open-source tools for interactive storytelling. Lightweight homepage powered by GitHub Pages.</p>
           <div class="cta">
-            <a id="orgLink" class="btn accent" href="#" rel="me">View Organization on GitHub</a>
+            <a id="orgLink" class="btn accent" href="https://github.com/Story-Adventurer" rel="me">View Organization on GitHub</a>
             <a class="btn" href="#projects">Browse Projects</a>
             <a class="btn" href="#community">Community</a>
             <a class="btn" href="#contact">Contact</a>
@@ -177,8 +168,8 @@
         </div>
         <aside aria-label="Quick start">
           <strong>Getting started</strong>
-          <pre><code>git clone https://github.com/ORG_NAME/ORG_NAME.github.io
-cd ORG_NAME.github.io
+          <pre><code>git clone https://github.com/Story-Adventurer/Story-Adventurer.github.io
+cd Story-Adventurer.github.io
 # edit index.html and push changes</code></pre>
           <div class="meta">Built with plain HTML, CSS, and a tiny script that lists popular repositories automatically.</div>
         </aside>
@@ -200,21 +191,21 @@ cd ORG_NAME.github.io
               <h3>Discussions</h3>
               <p class="meta">Ask questions, share ideas, and propose features.</p>
             </div>
-            <div><a id="discussionsLink" class="btn" href="#">Open discussions</a></div>
+            <div><a id="discussionsLink" class="btn" href="https://github.com/Story-Adventurer/discussions">Open discussions</a></div>
           </div>
           <div class="card">
             <div>
               <h3>Contributing guide</h3>
               <p class="meta">Development setup, commit conventions, and PR workflow.</p>
             </div>
-            <div><a id="contribLink" class="btn" href="#">Read the guide</a></div>
+            <div><a id="contribLink" class="btn" href="https://github.com/Story-Adventurer/.github/blob/main/CONTRIBUTING.md">Read the guide</a></div>
           </div>
           <div class="card">
             <div>
               <h3>Security</h3>
               <p class="meta">Report vulnerabilities responsibly.</p>
             </div>
-            <div><a id="securityLink" class="btn" href="#">Security policy</a></div>
+            <div><a id="securityLink" class="btn" href="https://github.com/Story-Adventurer/.github/blob/main/SECURITY.md">Security policy</a></div>
           </div>
         </div>
       </section>
@@ -234,7 +225,7 @@ cd ORG_NAME.github.io
               <h3>Website</h3>
               <p class="meta">Docs, blog, and announcements.</p>
             </div>
-            <div><a class="btn" id="siteLink" href="#">Visit website</a></div>
+            <div><a class="btn" id="siteLink" href="https://Story-Adventurer.github.io">Visit website</a></div>
           </div>
           <div class="card">
             <div>
@@ -253,40 +244,24 @@ cd ORG_NAME.github.io
   </div>
 
   <script>
-    // Minimal client-side configuration. Replace with your organization details.
-    const ORG = "ORG_NAME";                     // e.g., "openai"
-    const TAGLINE = "ORG_TAGLINE";              // e.g., "Open research and tools"
-    const WEBSITE = "https://ORG_NAME.github.io"; // Change if using a custom domain
-
-    // Link targets derived from ORG.
-    const orgUrl = `https://github.com/${ORG}`;
-    const discussionsUrl = `${orgUrl}/discussions`;
-    const defaultContrib = `${orgUrl}/.github/blob/main/CONTRIBUTING.md`;
-    const defaultSecurity = `${orgUrl}/.github/blob/main/SECURITY.md`;
+    // Minimal client-side setup for Story-Adventurer.
+    const ORG = "Story-Adventurer";
+    const WEBSITE = "https://Story-Adventurer.github.io";
+    const ORG_URL = "https://github.com/Story-Adventurer";
 
     document.title = `${ORG} · Open Source Projects`;
-    document.querySelector(".tagline").textContent = `${TAGLINE}. Lightweight homepage powered by GitHub Pages.`;
-    document.getElementById("orgLink").href = orgUrl;
-    document.getElementById("discussionsLink").href = discussionsUrl;
-    document.getElementById("contribLink").href = defaultContrib;
-    document.getElementById("securityLink").href = defaultSecurity;
+    document.getElementById("orgLink").href = ORG_URL;
     document.getElementById("siteLink").href = WEBSITE;
+    document.getElementById("discussionsLink").href = `${ORG_URL}/discussions`;
+    document.getElementById("contribLink").href = `${ORG_URL}/.github/blob/main/CONTRIBUTING.md`;
+    document.getElementById("securityLink").href = `${ORG_URL}/.github/blob/main/SECURITY.md`;
 
-    // Utility: format numbers with thin spaces (1 234).
-    function fmt(n) {
-      return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "\u2009");
-    }
+    function fmt(n) { return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "\u2009"); }
     function timeAgo(iso) {
       const d = new Date(iso);
       const diff = (Date.now() - d.getTime()) / 1000;
       if (diff < 60) return "just now";
-      const units = [
-        ["year", 365*24*3600],
-        ["month", 30*24*3600],
-        ["day", 24*3600],
-        ["hour", 3600],
-        ["minute", 60]
-      ];
+      const units = [["year", 31536000], ["month", 2592000], ["day", 86400], ["hour", 3600], ["minute", 60]];
       for (const [name, secs] of units) {
         const v = Math.floor(diff / secs);
         if (v >= 1) return `${v} ${name}${v>1?"s":""} ago`;
@@ -294,7 +269,6 @@ cd ORG_NAME.github.io
       return "just now";
     }
 
-    // Fetch public repos and render a simple grid of popular ones.
     async function loadRepos() {
       const status = document.getElementById("repoStatus");
       const grid = document.getElementById("repoGrid");
@@ -304,13 +278,8 @@ cd ORG_NAME.github.io
           headers: { "Accept": "application/vnd.github+json" }
         });
         if (!res.ok) throw new Error(`GitHub API responded ${res.status}`);
-        /** @type {Array} */
         const repos = await res.json();
-
-        const curated = repos
-          .filter(r => !r.fork)
-          .sort((a, b) => (b.stargazers_count || 0) - (a.stargazers_count || 0))
-          .slice(0, 6);
+        const curated = repos.filter(r => !r.fork).sort((a,b)=> (b.stargazers_count||0)-(a.stargazers_count||0)).slice(0, 6);
 
         grid.innerHTML = "";
         if (curated.length === 0) {
@@ -345,7 +314,6 @@ cd ORG_NAME.github.io
       }
     }
 
-    // Last updated stamp for the footer.
     function setLastUpdated() {
       const el = document.getElementById("lastUpdated");
       const now = new Date();
@@ -357,4 +325,3 @@ cd ORG_NAME.github.io
   </script>
 </body>
 </html>
-
